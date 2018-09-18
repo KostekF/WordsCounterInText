@@ -20,14 +20,14 @@ int main()
 	outputFile.open("OutputFile.csv", ios::out);
 	if (outputFile.is_open())
 	{
-		cout << "Connected to file " << "OutputFile.txt" << endl;
+		cout << "Connected to file: " << "OutputFile.txt" << endl;
 	}
 	if (outputFile.is_open() && w1.isConnected())
 	{
 		w1.collectData();
 		w1.saveDataToFile(outputFile);
 		outputFile.close();
-		cout << "File " << "OutputFile.txt" << " closed" << endl;
+		cout << "File " << "OutputFile.txt" << " closed!" << endl;
 	}
 	
 
